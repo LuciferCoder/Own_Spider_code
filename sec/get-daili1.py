@@ -51,25 +51,6 @@ def getXCProxyIp(max_page_number):
         print('------------------------------------')
         #time.sleep(2)
 
-# 验证获取到的代理IP是否可用
-# def verifyProxyIP(verify_ip, verify_ip_port):
-#     print('正在验证此代理IP是否可用......')
-#     try:
-#         telnetlib.Telnet(verify_ip, verify_ip_port, timeout=10)
-#         telnetlib.Telnet()
-#     except:
-#         print('此代理IP不可用')
-#         print('-------------------------')
-#     else:
-#         print('此代理IP可用')
-#         print('-------------------------')
-#         available_ip = verify_ip + ':' + verify_ip_port
-#         saveProxyIP(available_ip)
-
-# 将可用的代理IP保存到本地
-# def saveProxyIP(available_ip):
-#     with open(r'XCProxy.txt', 'a') as f:
-#         f.write(available_ip + '\n')
 
 if __name__ == '__main__':
     print('---------- 高匿代理ip获取 ----------')
